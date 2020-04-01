@@ -3,17 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			{% block title %}Welcome!
+			{% block title %}Virginia Atenza
 			{% endblock %}
 		</title>
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
 		{% endblock %}
 	</head>
-	<body>
-		{% block body %}{% endblock %}
-		{% block javascripts %}
-			{{ encore_entry_script_tags('app') }}
-		{% endblock %}
-	</body>
-</html>
+	<body id="page-top">
+		{{ include('shared/_navbar.html.twig') }}
+		{{ include('shared/_banner.html.twig') }}
+
+
+		<div class="content"> {% block body %}{% endblock %}
+			</div>
+			{{ include('shared/_footer.html.twig') }}
+			{% block javascripts %}
+				{{ encore_entry_script_tags('app') }}
+			{% endblock %}
+		</body>
+	</html>
