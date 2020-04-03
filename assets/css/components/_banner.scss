@@ -68,3 +68,15 @@
 .intro-single .breadcrumb a {
 	color: #fff;
 }
+
+@media (min-width: 768px) {
+	.intro .intro-title {
+		font-size: 4.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.intro .intro-subtitle {
+		font-size: 2.5rem;
+	}
+}
