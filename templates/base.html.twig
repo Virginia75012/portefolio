@@ -18,8 +18,7 @@
 		<div class="content"> {% block body %}{% endblock %}
 			</div>
 			{{ include('shared/_footer.html.twig') }}
-			{% block javascripts %}
-				<script src="{{ asset('build/app.js') }}"></script>
-			{% endblock %}
+			<script src="{{ asset('build/app.js') }}"></script>
+			{% block javascripts %}{% endblock %}
 		</body>
 	</html>
