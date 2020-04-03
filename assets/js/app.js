@@ -12,6 +12,7 @@ import Typed from 'typed.js';
 // import $ from 'jquery';
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
+require('../scss/app.scss');
 
 const $ = require('jquery');
 
