@@ -20,18 +20,31 @@ img#photo {
 	width: 270px;
 }
 
-.skill-mf span {
-	color: #4e4e4e;
+.lead {
+	margin-right: 16px;
 }
 
-.skill-mf .progress {
-	background-color: #cde1f8;
-	margin: .5rem 0 1.2rem 0;
-	border-radius: 0;
-	height: 1.3rem;
+.school {
+	font-weight: bold;
+
+	&:hover {
+		color: #00909E;
+	}
 }
 
-.skill-mf .progress .progress-bar {
-	height: 1.75rem;
-	background-color: #FF073A;
-}
+
+// .skill-mf span {
+// 	color: #4e4e4e;
+// }
+
+// .skill-mf .progress {
+// 	background-color: #cde1f8;
+// 	margin: .5rem 0 1.2rem 0;
+// 	border-radius: 0;
+// 	height: 1.3rem;
+// }
+
+// .skill-mf .progress .progress-bar {
+// 	height: 1.75rem;
+// 	background-color: #FF073A;
+// }
