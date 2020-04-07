@@ -32,19 +32,268 @@ img#photo {
 	}
 }
 
+#skills-diagram {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 68px;
+	/*   max-width: 35em; */
+}
 
-// .skill-mf span {
-// 	color: #4e4e4e;
-// }
+#skills-diagram .item {
+	position: relative;
+	color: #fff !important;
+	display: inline-block;
+	vertical-align: top;
 
-// .skill-mf .progress {
-// 	background-color: #cde1f8;
-// 	margin: .5rem 0 1.2rem 0;
-// 	border-radius: 0;
-// 	height: 1.3rem;
-// }
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50%;
 
-// .skill-mf .progress .progress-bar {
-// 	height: 1.75rem;
-// 	background-color: #FF073A;
-// }
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+
+	/* set defaults to skill-2 */
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	opacity: 0.8;
+}
+
+#skills-diagram .item:hover {
+	opacity: 1;
+}
+
+/* Support vertical mode */
+#skills-diagram-vertical .item {
+	display: block;
+	/* .25em is an equivalent to inline-block's horizontal whitespace margin */
+	margin: 0.25em auto;
+}
+
+/* Provide different sizes */
+#skills-diagram .skill-1 {
+	vertical-align: bottom;
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+
+	background-color: #110133;
+	border-color: #110133;
+	opacity: 0.6;
+
+	left: 1em;
+}
+
+#skills-diagram .skill-2 {
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 2em;
+	left: 1em;
+}
+
+#skills-diagram .skill-3 {
+	vertical-align: bottom;
+
+	width: 5em;
+	height: 5em;
+	line-height: 5em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 5em;
+	right: 0.8em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-4 {
+	width: 5em;
+	height: 5em;
+	line-height: 5em;
+
+	background-color: #110133;
+	border-color: #110133;
+	opacity: 0.7;
+
+	top: 2.67em;
+	left: 5em;
+}
+
+#skills-diagram .skill-5 {
+	/* vertical-align: top; */
+
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	right: 3em;
+	top: 6.2em;
+}
+
+#skills-diagram .skill-6 {
+	vertical-align: bottom;
+
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+
+	background-color: #110133;
+	border-color: #110133;
+
+	right: 3em;
+	top: 6em;
+}
+
+#skills-diagram .skill-7 {
+	/* vertical-align: top; */
+
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	right: 2em;
+	bottom: 0.8em;
+}
+
+#skills-diagram .skill-8 {
+	vertical-align: bottom;
+
+	width: 5em;
+	height: 5em;
+	line-height: 5em;
+	background-color: #110133;
+	border-color: #110133;
+
+	top: 0.8em;
+	right: 5em;
+}
+
+#skills-diagram .skill-9 {
+	vertical-align: bottom;
+
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	background-color: #110133;
+	border-color: #110133;
+
+	top: 3em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-10 {
+	vertical-align: bottom;
+
+	width: 7em;
+	height: 7em;
+	line-height: 7em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 8em;
+	right: 2em;
+}
+
+#skills-diagram .skill-11 {
+	vertical-align: bottom;
+
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+
+	top: 2.56em;
+	right: 7em;
+
+	z-index: 1;
+}
+
+#skills-diagram .skill-12 {
+	vertical-align: bottom;
+
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	background-color: #110133;
+	border-color: #110133;
+
+	top: 2.8em;
+	right: 7em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-13 {
+	vertical-align: bottom;
+
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 5em;
+	right: 12em;
+	z-index: 1;
+}
+
+/*======================================
+//--//-->   MEDIA QUERIES
+======================================*/
+
+@media (max-width: 768px) {
+	#skills-diagram {
+		margin-bottom: 100px;
+
+	}
+}
+
+@media (max-width: 768px) {
+	#skills-diagram .skill-1 {
+		left: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	#skills-diagram .skill-2 {
+		left: 0.9em;
+	}
+}
+
+@media (max-width: 768px) {
+	#skills-diagram .skill-5 {
+		right: 4em;
+	}
+}
+
+@media (max-width: 768px) {
+	#skills-diagram .skill-4 {
+		left: 4em;
+	}
+}
+
+@media (max-width: 768px) {
+	#skills-diagram .skill-6 {
+		left: 19.5em;
+		top: -0.95em;
+	}
+}
+
+@media (max-width: 768px) {
+	#bubbles {
+		margin-right: 16px;
+	}
+}
