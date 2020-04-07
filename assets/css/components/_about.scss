@@ -16,10 +16,6 @@
 	margin-top: -47px;
 }
 
-img#photo {
-	width: 270px;
-}
-
 .lead {
 	margin-right: 16px;
 }
@@ -163,8 +159,10 @@ img#photo {
 	background-color: rgb(109, 182, 173);
 	border-color: rgba(109, 182, 173, 1);
 
-	right: 2em;
-	bottom: 0.8em;
+	@media (min-width: 992px) {
+		right: 3em !important;
+		top: 0em !important;
+	}
 }
 
 #skills-diagram .skill-8 {
@@ -253,47 +251,93 @@ img#photo {
 /*======================================
 //--//-->   MEDIA QUERIES
 ======================================*/
+@media (min-width: 768px) {
+	.about-me {
+		margin-top: 140px;
+	}
+}
+
+@media (min-width: 992px) {
+	.about-me {
+		margin-top: 0;
+	}
+}
 
 @media (max-width: 768px) {
 	#skills-diagram {
 		margin-bottom: 100px;
-
 	}
-}
 
-@media (max-width: 768px) {
 	#skills-diagram .skill-1 {
 		left: 0;
 	}
-}
 
-@media (max-width: 768px) {
 	#skills-diagram .skill-2 {
 		left: 0.9em;
 	}
-}
 
-@media (max-width: 768px) {
 	#skills-diagram .skill-5 {
 		right: 4em;
 	}
-}
 
-@media (max-width: 768px) {
 	#skills-diagram .skill-4 {
 		left: 4em;
 	}
-}
 
-@media (max-width: 768px) {
 	#skills-diagram .skill-6 {
 		left: 19.5em;
 		top: -0.95em;
 	}
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
+	#skills-diagram .skill-7 {
+		right: 26em;
+		top: 4.5em;
+	}
+
 	#bubbles {
-		margin-right: 16px;
+		margin-left: 80px;
+	}
+
+	img#photo {
+		width: 350px;
+	}
+}
+
+@media (min-width: 992px) {
+	#bubbles {
+		margin-left: 30px;
+	}
+
+	img#photo {
+		width: 270px;
+	}
+}
+
+@media screen and (max-device-width: 768px),
+screen and (max-width: 768px) {
+	div.about-info {
+		margin-top: 30px;
+		margin-left: 18px;
+	}
+
+	.about-info p {
+		font-size: 1.4em;
+	}
+
+	.title-s {
+		font-size: 1em;
+	}
+
+	.title-skill {
+		font-size: 1.5em;
+	}
+
+	.navbar-b.navbar-trans .nav-item,
+	.navbar-b.navbar-reduce .nav-item {
+		width: 120px;
+		font-size: 18px;
 	}
 }
