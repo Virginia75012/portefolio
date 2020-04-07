@@ -28,3 +28,27 @@
 .footer .fa-heart {
 	color: #D23333;
 }
+
+@media (max-width: 600px) {
+	div.footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: unset;
+	}
+
+	.footer-links {
+		justify-content: space-around;
+		margin-bottom: 20px;
+	}
+
+	.fa-github,
+	.fa-twitter,
+	.fa-linkedin {
+		font-size: 1.4em;
+	}
+
+	div.footer-copyright {
+		font-size: 1em;
+		;
+	}
+}
