@@ -6,10 +6,8 @@
 			{% block title %}Virginia Atenza
 			{% endblock %}
 		</title>
-		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<meta content="" name="keywords">
 		<meta
-		content="" name="description">
+		name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap CSS File -->
 		<link
@@ -29,11 +27,11 @@
 		{{ include('shared/_navbar.html.twig') }}
 		{{ include('shared/_banner.html.twig') }}
 
-		<div class="content"> {% block body %}{% endblock %}
-			</div>
-			{{ include('shared/_footer.html.twig') }}
-			{% block javascripts %}
-				{{ encore_entry_script_tags('app') }}
-			{% endblock %}
-		</body>
-	</html>
+		{% block body %}{% endblock %}
+
+		{{ include('shared/_footer.html.twig') }}
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</body>
+</html>
