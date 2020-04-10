@@ -41,24 +41,6 @@
 	margin-left: 0px;
 }
 
-@media screen and (max-width: 768px) {
-	.timeline:before {
-		margin-left: -64px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.timeline:before {
-		margin-left: -64px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.timeline .timeline-heading {
-		margin-bottom: 30px;
-	}
-}
-
 .timeline .timeline-heading>div h3 {
 	display: inline-block;
 	padding: 7px 15px;
@@ -75,22 +57,9 @@
 	border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
-	.timeline .timeline-heading>div h3 {
-		float: left;
-		margin-bottom: 0;
-	}
-}
-
 .timeline>li {
 	margin-bottom: 20px;
 	position: relative;
-}
-
-@media screen and (max-width: 768px) {
-	.timeline>li {
-		margin-bottom: 4em;
-	}
 }
 
 .timeline>li:before,
@@ -114,26 +83,6 @@
 	border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
-	.timeline>li>.timeline-panel {
-		width: 85% !important;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.timeline>li>.timeline-panel {
-		width: 75% !important;
-	}
-
-	.timeline>li>.timeline-panel:before {
-		top: 30px;
-	}
-
-	.timeline>li>.timeline-panel:after {
-		top: 31px;
-	}
-}
-
 .timeline>li>.timeline-badge {
 	color: #fff;
 	width: 50px;
@@ -154,18 +103,6 @@
 	border-radius: 50%;
 }
 
-@media screen and (max-width: 768px) {
-	.timeline>li>.timeline-badge {
-		margin-left: -10px !important;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.timeline>li>.timeline-badge {
-		margin-left: -10px !important;
-	}
-}
-
 .timeline>li>.timeline-badge i {
 	display: table-cell;
 	vertical-align: middle;
@@ -175,12 +112,6 @@
 
 .timeline>li.timeline-unverted {
 	text-align: right;
-}
-
-@media screen and (max-width: 768px) {
-	.timeline>li.timeline-unverted {
-		text-align: left;
-	}
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -228,6 +159,102 @@
 	font-weight: bold;
 }
 
+a:hover {
+	color: #00909E !important;
+}
+
+.list-group-flush .list-group-item {
+	background-color: #fff;
+	border-bottom: 1px solid #00909E;
+	border-left-color: #fff;
+	border-right-color: #fff;
+}
+
+.list-group-flush .list-group-item:hover {
+	cursor: pointer;
+	background-color: #110133;
+	opacity: 0.7;
+	color: #fff;
+}
+
+.fa-bookmark,
+.fa-check-square {
+	color: #00909E;
+}
+
+/*======================================
+//--//-->   MEDIA QUERIES
+======================================*/
+
+@media screen and (max-width: 768px) {
+	.timeline:before {
+		margin-left: -64px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.timeline:before {
+		margin-left: -64px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline .timeline-heading {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline .timeline-heading>div h3 {
+		float: left;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline>li {
+		margin-bottom: 4em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline>li>.timeline-panel {
+		width: 85% !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.timeline>li>.timeline-panel {
+		width: 75% !important;
+	}
+
+	.timeline>li>.timeline-panel:before {
+		top: 30px;
+	}
+
+	.timeline>li>.timeline-panel:after {
+		top: 31px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline>li>.timeline-badge {
+		margin-left: -10px !important;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.timeline>li>.timeline-badge {
+		margin-left: -10px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.timeline>li.timeline-unverted {
+		text-align: left;
+	}
+}
+
 @media (max-width: 992px) {
 	ul.timeline:before {
 		left: 90px;
@@ -264,54 +291,8 @@
 	}
 }
 
-a:hover {
-	color: #00909E !important;
-}
-
 @media screen and (max-width: 768px) {
 	#fh5co-resume {
 		padding: 3em 0;
 	}
-}
-
-@media (min-width: 992px) {
-	.col-md-offset-2 {
-		margin-left: 16.66667%;
-	}
-}
-
-@media (min-width: 992px) {
-	.col-md-8 {
-		width: 66.66667%;
-	}
-}
-
-@media (min-width: 992px) {
-	.col-md-offset-0 {
-		margin-left: 0%;
-	}
-}
-
-@media (min-width: 992px) {
-	.col-md-12 {
-		width: 100%;
-	}
-}
-
-.list-group-flush .list-group-item {
-	background-color: #fff;
-	border-bottom: 1px solid #00909E;
-	border-left-color: #fff;
-	border-right-color: #fff;
-}
-
-.list-group-flush .list-group-item:hover {
-	cursor: pointer;
-	background-color: #110133;
-	opacity: 0.7;
-	color: #fff;
-}
-
-.fa-bookmark {
-	color: #00909E;
 }
