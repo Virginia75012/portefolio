@@ -125,17 +125,52 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 		});
 	}
 
+
 	/*--/ Testimonials owl /--*/
-	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
+	// $('#testimonial-mf').owlCarousel({
+	// 	margin: 20,
+	// 	autoplay: true,
+	// 	autoplayTimeout: 4000,
+	// 	autoplayHoverPause: true,
+	// 	responsive: {
+	// 		0: {
+	// 			items: 1,
+	// 		}
+	// 	}
+	// });
+
+	// var controller = new ScrollMagic.Controller();
+
+	// var scene = new ScrollMagic.Scene({
+	// 		triggerElement: '#about',
+	// 		trigerHook: "onScroll",
+	// 		duration: 700
+	// 	})
+
+	// 	.setClassToggle('#about', 'fadeIn')
+	// 	.addTo(controller);
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+	// loop through all elements
+	$('.animate-box').each(function () {
+
+		// build a tween
+		var tween = TweenMax.from($(this), 0.3, {
+			autoAlpha: 0,
+			scale: 0.5,
+			y: '+=30',
+			ease: Linear.easeNone
+		});
+
+		// build a scene
+		var scene = new ScrollMagic.Scene({
+				triggerElement: this,
+				triggerHook: 0.9
+			})
+			.setTween(tween) // trigger a TweenMax.to tween
+			.addTo(controller);
+
 	});
 
 })(jQuery);
