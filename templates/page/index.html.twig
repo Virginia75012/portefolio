@@ -4,436 +4,113 @@
 {% endblock %}
 
 {% block body %}
-	<!--/ Section About Star /-->
-	<section id="about" class="about-mf sect-pt4 route">
+
+	{{ include('page/_about.html.twig') }}
+
+	{{ include('page/_exp.html.twig') }}
+
+	<!--/ Work Start/-->
+
+	<section id="portfolio" class="team">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					<div class="box-shadow-full">
-						<div class="row">
-							<div class="col-md-12 col-lg-6">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="{{ asset('build/virginia2.png' ) }}" class="" alt="photo-virginia" id="photo">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-7">
-										<div class="about-info">
-											<p>
-												<span class="title-s">Identité:
-												</span>
-												<span>Virginia Atenza</span>
-											</p>
-											<p>
-												<span class="title-s">Profil:
-												</span>
-												<span>Développeuse Web</span>
-											</p>
-											<p>
-												<span class="title-s">Email:
-												</span>
-												<span>virginia.atenza@gmail.com</span>
-											</p>
-											<p>
-												<span class="title-s">Téléphone:
-												</span>
-												<span>06.60.69.59.53</span>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="skill-mf" id="skills-diagram">
-									<p class="title-skill mb-3">Compétences Techniques</p>
-									<div id="bubbles">
-										<div class="item skill-1 ">HTML</div>
-										<div class="item skill-2">CSS</div>
-										<div class="item skill-3">JavaScript</div>
-										<div class="item skill-4">Symfony</div>
-										<div class="item skill-5">Twig</div>
-										<div class="item skill-6">PHP7</div>
-										<div class="item skill-7">SCSS</div>
-										<div class="item skill-8">Bootstrap</div>
-										<div class="item skill-9">Ruby</div>
-										<div class="item skill-10">Ruby On Rails</div>
-										<br/>
-										<div class="item skill-11">SQL</div>
-										<div class="item skill-12">POO</div>
-										<div class="item skill-13">MVC</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12 col-lg-6">
-								<div class="about-me pt-4 pt-md-0">
-									<div class="title-box-2">
-										<h5 class="title-left">
-											À propos
-										</h5>
-									</div>
-									<p class="lead text-justify">
-										Mon parcours professionnel est riche de diverses expériences dans divers domaines d'activité. En parallèle j'ai un 											profil artistique puisque je suis également comédienne.<br/>
-										En 2018, j'ai découvert, par le biais de mon ancien poste de Conseillère à l'Emploi, le métier de Développeuse Web. 										Je m'y suis intéressée de prêt et je me suis aperçue que j'aimais cela : coder, créer, débugger, rechercher des 												solutions, apprendre sans cesse, découvrir des nouveaux langages, etc.
-									</p>
-									<p class="lead text-justify">
-										Afin de concrétiser cette envie d'évolution vers ce nouveau métier, j'ai dans un premier temps suivi une formation 											de Développeur Web, avec
-										<a href="https://oclock.io/" target="_blank">
-											<strong class="school">«O'clock»</strong>
-										</a>.
-										<br/>
-										Puis, j'ai eu la chance en 2020 de pouvoir suivre la Formation de Développeur Fullstack avec
-										<a href="https://www.lewagon.com/fr" target="_blank">
-											<strong class="school">«Le Wagon»</strong>
-										</a>.
-									</p>
-									<p class="lead text-justify">
-										Je continue de me former, de monter en compétences et de maintenir une veille numérique quotidienne. J'ai également 										le statut de micro-entrepreneur afin de pouvoir effectuer des missions ponctuelles en tant que freelance.<br/>
-										Ma priorité aujourd'hui est de m'investir dans une nouvelle prise de poste en tant que Développeuse Web au sein 												d'une entreprise ou une startup.
-									</p>
-								</div>
-							</div>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<div class="sec-title text-center">
+						<h2>Portefolio</h2>
+						<div class="devider">
+							<i class="far fa-heart fa-lg"></i>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<!--/ Section About End /-->
 
-	<!--/ Section Experience Strat /-->
-	<section id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Mon parcours</h2>
-					<div class="cv">
-						<object type="application/pdf" width="100%" height="100%">
-							<param name="src" value="{{ asset('pdf/test.pdf') }}"/>
-							<p>Vous pouvez visualiser et télécharger mon CV directement<br/>
-								<a href="{{ asset('build/CV-Developpeuse Web-Virginia Atenza.pdf' ) }}" target="_blank">
-									<strong class="click">en cliquant ici</strong>
-									<i class="fas fa-file-pdf"></i>
-								</a>
-							</p>
-						</object>
+				<!-- single project -->
+				<figure class="single-project col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="project-thumb">
+						<img src="{{ asset('build/sitefreelance.png' ) }}" alt="Team Member" class="img-responsive">
+						<a href="https://www.virginiaatenza.fr/" target="_blank">
+							<figcaption class="overlay">
+								<h5>virginiatenza.fr
+								</h5>
+								<p>Site présentant mes prestations de services en tant que développeuse web freelance</p>
+								<p class="icon-link">
+									<i class="fas fa-link fa-lg"></i>
+								</p>
+							</figcaption>
+						</a>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div>
-								<h3>Expériences</h3>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge">
-								<i class="fas fa-suitcase"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Développeuse web freelance</h3>
-									<span class="company">
-										<strong>Micro-entreprise</strong>
-										- Depuis Septembre 2019</span>
-								</div>
-								<div class="timeline-body">
-									<p>Proposition de services de création de sites :
-										<a href="https://www.virginiaatenza.fr/" target="_blank">www.virginiaatenza.fr</a>
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge">
-								<i class="fas fa-suitcase"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Développeuse Web Fullstack</h3>
-									<span class="company">
-										<strong>Le Wagon, Paris</strong>
-										- Janvier à Mars 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>Pour les 3 projets cités ci-dessous, les outils et technologies utilisés :
-										<br/>
-										Trello
-										<span class="pipe-caracter">|</span>
-										Figma
-										<span class="pipe-caracter">|</span>
-										HTML
-										<span class="pipe-caracter">|</span>
-										SCSS
-										<span class="pipe-caracter">|</span>
-										Bootstrap
-										<span class="pipe-caracter">|</span>
-										JavaScript
-										<span class="pipe-caracter">|</span>
-										WebPack
-										<span class="pipe-caracter">|</span>
-										Yarn
-										<span class="pipe-caracter">|</span>
-										Ruby / Ruby on Rails
-										<span class="pipe-caracter">|</span>
-										Active Record
-										<span class="pipe-caracter">|</span>
-										PostgreSQL
-										<span class="pipe-caracter">|</span>
-										Git / GitHub
-										<span class="pipe-caracter">|</span>
-										Heroku
-									</p>
-									<p>
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">
-												<i class="fas fa-bookmark"></i>
-												Création d’un site pour une Agence Immobilière Sociale
-												<em class="title-site">"AIS Caritas"</em>
-												<br/>
-												Rôle tenu de Lead Développeuse dans une équipe de 3 : Gestion de Projet. Travail sur les wireframes, les User 																Stories, UX Research, etc.
-											</li>
-											<li class="list-group-item">
-												<i class="fas fa-bookmark"></i>
-												Création d’une plateforme de location de grand-parents
-												<em class="title-site">"Mammys & Papys"</em>
-												<br/>
-												Projet en équipe de 3 développeurs : reproduire une plateforme de location genre AirBnb.
-											</li>
-											<li class="list-group-item">
-												<i class="fas fa-bookmark"></i>
-												Création d’une plateforme de cocktails
-												<em class="title-site">"Mister Cocktail"</em>
-												<br/>
-												Projet en solo de création d'une application web répertoriant des cocktails, avec un espace utilisateur.
-											</li>
-										</ul>
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge">
-								<i class="fas fa-suitcase"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Développeuse Web Fullstack</h3>
-									<span class="company">
-										<strong>O'clock, Téléprésentiel</strong>
-										- Avril à Octobre 2018</span>
-								</div>
-								<div class="timeline-body">
-									<p>Pour les 2 projets cités ci-dessous, les outils et technologies utilisés :
-										<br/>
-										Trello
-										<span class="pipe-caracter">|</span>
-										Balsamiq
-										<span class="pipe-caracter">|</span>
-										HTML
-										<span class="pipe-caracter">|</span>
-										SCSS
-										<span class="pipe-caracter">|</span>
-										Bootstrap
-										<span class="pipe-caracter">|</span>
-										JavaScript
-										<span class="pipe-caracter">|</span>
-										WebPack
-										<span class="pipe-caracter">|</span>
-										PHP7
-										<span class="pipe-caracter">|</span>
-										Symfony 4
-										<span class="pipe-caracter">|</span>
-										Twig
-										<span class="pipe-caracter">|</span>
-										Yarn
-										<span class="pipe-caracter">|</span>
-										Git / GitHub
-									</p>
-									<p>
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">
-												<i class="fas fa-bookmark"></i>
-												Création d’une application Web de jeu de Quizz,
-												<em class="title-site">"Les Valles Baques"</em>
-												<br/>
-												Polyvalence dans les rôles durant le projet : Gestion de Projet. Travail sur les wireframes, les User 																Stories, la base de données, etc.
-											</li>
-											<li class="list-group-item">
-												<i class="fas fa-bookmark"></i>
-												Création d’une plateforme de Foire aux Questions
-												<br/>
-												Projet en solo de création d'un site de Foire aux Questions genre Quora, StackOverFlow, avec un espace utilisateur et administrateur.
-											</li>
-										</ul>
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge">
-								<i class="fas fa-suitcase"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Conseillère à l'Emploi</h3>
-									<span class="company">
-										<strong>Pôle Emploi, Paris</strong>
-										- 2016 / 2019
-									</span>
-								</div>
-								<div class="timeline-body">
-									<p>Suivi d’un portefeuille de 800 personnes.<br/>
-										Gestion globale du dossier du demandeur d’emploi. Analyse des besoins, suivi 		adapté et individualisé. Sensibiliation aux services digitaux (Emploi Store, Pôle-Emploi.fr, Moocs, Twitter, etc). Aide et conseil parcours Formation.
-									</p>
-								</div>
-							</div>
-							<br>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge">
-								<i class="fas fa-suitcase"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Assistante d'Education</h3>
-									<span class="company">
-										<strong>Pôle Emploi, Paris</strong>
-										- 2007 / 2014
-									</span>
-								</div>
-								<div class="timeline-body">
-									<p>Secrétariat et Encadrement des élèves. Animation d'ateliers théâtre et ateliers d'espagnol. Préparation Concours Interne de Professeur d'Espagnol et Conseillère Principale d'Education.
-									</p>
-								</div>
-							</div>
-							<br>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge">
-								<i class="fas fa-suitcase"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Comédienne</h3>
-									<span class="company">
-										<strong>Le Manoir, Paris</strong>
-										- 2013 / 2015
-									</span>
-								</div>
-								<div class="timeline-body">
-									<p>Spectacle vivant dans une maison hantée.
-									</p>
-								</div>
-							</div>
-							<br>
-						</li>
-						<li class="timeline-heading text-center animate-box mt-5">
-							<div>
-								<h3>Formations</h3>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge">
-								<i class="fas fa-graduation-cap"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">
-										Certification Conceptrice - Développeuse d'Applications Web, niv. VI</h3>
-									<span class="company">
-										<strong>Le Wagon Batch#350, Paris</strong>
-										- 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>Bootcamp intensif de 9 semaines, structuré en 3 phases principales :
-										<br/>
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Phase 0 - Travail préparatoire : Se préparer au bootcamp avec travail personnel</li>
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Phase 1 - Fondations : Apprendre les concepts de base de la programmation, l'architecture logicielle et les bases de données relationnelles.</li>
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Phase 2 - Développement Web : Apprendre la conception d'interface utilisateur, le développement front et coder des applications web avec Ruby on Rails</li>
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Phase 3 - Projet Final : Créer de A à Z un projet web en équipe</li>
-										</ul>
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge">
-								<i class="fas fa-graduation-cap"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Titre Professionnel de Développeur Web et Web Mobile, niv. III</h3>
-									<span class="company">
-										<strong>O'clock</strong>
-										- 2018</span>
-								</div>
-								<div class="timeline-body">
-									<p>Formation intensive de 5 mois, avec une méthologie de pédagogie inversée :
-										<br/>
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Programme avec un socle commun sur 3 mois, sur les technologies de bases et spécialisation en Symfony avant le projet Apothéose
-											</li>
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Travail quotidien sur des challenges/exercices pratiques, en solo ou en équipe
-											</li>
-											<li class="list-group-item">
-												<i class="fas fa-check-square"></i>
-												Sensibilisation aux bonnes pratiques du Web Opquast
-											</li>
-										</ul>
-									</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge">
-								<i class="fas fa-graduation-cap"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Art Dramatique</h3>
-									<span class="company">
-										<strong>Cours Florent et Studio Alain de Bock</strong>
-										- 2002 - 2008</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge">
-								<i class="fas fa-graduation-cap"></i>
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">DEUG Lettres et Arts</h3>
-									<span class="company">
-										<strong>Université Paris 7, Denis Diderot</strong>
-										- 2002 - 2006</span>
-								</div>
-								<div class="timeline-body">
-									<p>Parcours universitaire en Lettres Modernes et Arts du Spectacle</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
+					<h4>Site web freelance</h4>
+				</figure>
+				<!-- end single project -->
+
+				<!-- single member -->
+				<figure class="single-project col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="project-thumb">
+						<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=693&q=80" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas
+							</h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li>
+									<a href="">
+										<i class="fas fa-link"></i>
+									</a>
+								</li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Martin Matrone</h4>
+					<span>Lead Developer</span>
+				</figure>
+				<!-- end single member -->
+
+				<!-- single member -->
+				<figure class="single-project col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="project-thumb">
+						<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=693&q=80" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas
+							</h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li>
+									<a href="">
+										<i class="fas fa-link"></i>
+									</a>
+								</li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Steve Flaulkin</h4>
+					<span>Sr. UI Designer</span>
+				</figure>
+				<!-- end single member -->
+
+				<!-- single member -->
+				<figure class="single-project col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="project-thumb">
+						<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=693&q=80" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas
+							</h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li>
+									<a href="">
+										<i class="fas fa-link"></i>
+									</a>
+								</li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>John Filmr Doe</h4>
+					<span>Managing Director</span>
+				</figure>
+				<!-- end single member -->
+
 			</div>
 		</div>
 	</section>
-	<!--/ Section Experiences End /-->
+
+	<!--/ Work End/-->
 {% endblock %}

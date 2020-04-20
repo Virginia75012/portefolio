@@ -8,8 +8,7 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import '../css/app.scss';
 import Typed from 'typed.js';
-// Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
-// import $ from 'jquery';
+
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
 require('../css/app.scss');
@@ -69,17 +68,11 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 	// });
 
 	/*--/ Star Scrolling nav /--*/
-	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: (target.offset().top - navHeight + 5)
-				}, 1000, "easeInOutExpo");
-				return false;
-			}
-		}
+	$('a.js-scroll').click(function () {
+		$('html, body').animate({
+			scrollTop: $($.attr(this, 'href')).offset().top - 92
+		}, 1000);
+		return false;
 	});
 
 	// Closes responsive menu when a scroll trigger link is clicked
@@ -139,17 +132,7 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 	// 	}
 	// });
 
-	// var controller = new ScrollMagic.Controller();
-
-	// var scene = new ScrollMagic.Scene({
-	// 		triggerElement: '#about',
-	// 		trigerHook: "onScroll",
-	// 		duration: 700
-	// 	})
-
-	// 	.setClassToggle('#about', 'fadeIn')
-	// 	.addTo(controller);
-	// init controller
+	/*--/ ScrollMagix TweenMax /--*/
 	var controller = new ScrollMagic.Controller();
 
 	// loop through all elements
@@ -170,7 +153,6 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 			})
 			.setTween(tween) // trigger a TweenMax.to tween
 			.addTo(controller);
-
 	});
 
 })(jQuery);

@@ -1,0 +1,119 @@
+.devider {
+	margin-top: 30px;
+}
+
+.fa-heart {
+	color: #cccccc;
+}
+
+.devider:before,
+.devider:after {
+	content: "______________________";
+	color: #e6e8ea;
+	position: relative;
+	bottom: 6px;
+}
+
+.devider:before {
+	right: 10px;
+}
+
+.devider:after {
+	left: 10px;
+}
+
+.team h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height: 1.5;
+	color: #110133;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	// width: 351px;
+	// height: 326px;
+	// object-fit: contain;
+}
+
+.project-thumb .overlay {
+	font-size: 20px;
+	padding: 20px;
+	line-height: 24px;
+}
+
+.project-thumb .overlay h5 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 30px 0;
+	color: #110133;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 14px;
+	bottom: 0;
+	right: 14px;
+	height: 82%;
+	opacity: 0;
+	transition: .5s ease;
+	background: #00909E;
+	color: #fff;
+}
+
+.overlay:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+
+.icon-link {
+	background: #110133;
+	padding: 10px 10px;
+	width: 51px;
+	margin-left: 75px;
+}
+
+
+.single-project h4 {
+	color: #110133;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 15px 0 8px;
+}
+
+.single-project:hover h4 {
+	color: #00909E;
+}
+
+
+/*======================================
+//--//-->   MEDIA QUERIES
+======================================*/
+
+@media (min-width: 980px) and (max-width: 1150px) {
+
+	.project-thumb {
+		width: auto;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	/* team */
+
+	.project-thumb .overlay h5 {
+		margin: 25px 0;
+	}
+
+	.project-thumb {
+		margin: 0 auto;
+	}
+}
