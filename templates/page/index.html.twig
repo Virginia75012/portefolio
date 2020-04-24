@@ -13,14 +13,27 @@
 
 	<section id="contact">
 		{% for message in app.flashes('success')%}
-			<div class="alert alert-success">
+			<div class="alert alert-success" role="alert">
 				{{ message }}
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
 			</div>
 		{% endfor %}
 
 		{% if not form.vars.valid %}
-			<div class="alert alert-danger">
+			<script>
+				$(document).ready(function () {
+$('html,body').animate({
+scrollTop: $('#contactForm').offset().top
+}, 5000);
+});
+			</script>
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">
 				Il y a une erreur dans votre formulaire
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
 			</div>
 		{% endif %}
 		<div id="contactForm">

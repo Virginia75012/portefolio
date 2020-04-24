@@ -25,7 +25,7 @@ class Contact
 	 * @var string|null
 	 *? @Assert\NotBlank(message="Merci de renseigner votre téléphone")
 	 *? @Assert\Regex(
-	 * pattern="/[0-9]{10}/"
+	 * pattern="/[0-9]{10}/", message="Numéro de téléphone non valide"
 	 * )
 	 */
 	private $phone;
@@ -41,7 +41,7 @@ class Contact
 	/**
 	 * @var string|null
 	 *? @Assert\NotBlank(message="Merci d'ajouter votre message")
-	 *? @Assert\Length(min=10)
+	 *? @Assert\Length(min=10, minMessage="Votre message est trop court, il doit contenir au moins 10 caractères")
 	 * 
 	 */
 	private $message;

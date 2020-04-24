@@ -24,7 +24,8 @@ class PageController extends AbstractController
 		if ($form->isSubmitted() && $form->isValid()) {
 			$notification->notify($contact);
 			$this->addFlash('success', 'Votre email a bien été envoyé');
-			return $this->redirectToRoute('home');
+
+			return $this->redirectToRoute('home', ['_fragment' => 'contact']);
 		}
 
 
