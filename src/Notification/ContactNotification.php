@@ -28,6 +28,7 @@ class ContactNotification
 	public function notify(Contact $contact)
 	{
 		$message = (new \Swift_Message())
+			->setSubject('Nouveau message du Portfolio')
 			->setFrom('noreply@gmail.com')
 			->setTo('virginia.atenza@gmail.com')
 			->setReplyTo($contact->getEmail())

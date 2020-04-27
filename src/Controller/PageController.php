@@ -23,11 +23,10 @@ class PageController extends AbstractController
 
 		if ($form->isSubmitted() && $form->isValid()) {
 			$notification->notify($contact);
-			$this->addFlash('success', 'Votre email a bien été envoyé');
+			$this->addFlash('success', 'Merci pour votre message ! Il a bien été envoyé et je vous répondrai dans les plus brefs délais. ');
 
-			return $this->redirectToRoute('home', ['_fragment' => 'contact']);
+			return $this->redirectToRoute('home');
 		}
-
 
 		return $this->render('page/index.html.twig', [
 			'controller_name' => 'PageController',

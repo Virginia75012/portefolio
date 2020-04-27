@@ -1,0 +1,50 @@
+#contact {
+	margin-top: 40px;
+}
+
+.my-btn {
+	background-color: #110133;
+	border: none;
+	padding: 12px 65px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+margin-top: 15px;
+
+	&:hover {
+		background-color: #00909E;
+	}
+}
+
+.form-control:focus {
+	border-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+input.form-control {
+	font-size: 20px;
+	padding: 2%;
+	margin-bottom: 36px;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px solid #110133;
+	max-width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+textarea#contact_message {
+	border-bottom: 1px solid #110133 !important;
+}
+
+textarea#contact_message {
+	border: none;
+	font-size: 20px;
+}
+
+input.form-control:focus,
+textarea#contact_message.form-control:focus {
+	border-bottom: 1px solid #00909E !important;
+}

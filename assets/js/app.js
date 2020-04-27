@@ -155,4 +155,18 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 			.addTo(controller);
 	});
 
+	//Alert messages 
+	document.addEventListener('submit', function (event) {
+		if (document.getElementById("contact")) {
+			location.href = "#contact"
+		}
+	});
+
+	window.setTimeout(function () {
+		$(".alert").fadeTo(1000, 0).slideUp(1000, function () {
+			$(this).remove();
+		});
+	}, 5000);
+
+
 })(jQuery);

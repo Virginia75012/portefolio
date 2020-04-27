@@ -5,55 +5,69 @@
 
 {% block body %}
 
-	{{ include('page/_about.html.twig') }}
+{{ include('page/_about.html.twig') }}
 
-	{{ include('page/_exp.html.twig') }}
+{{ include('page/_exp.html.twig') }}
 
-	{{ include('page/_work.html.twig') }}
+{{ include('page/_work.html.twig') }}
 
-	<section id="contact">
-		{% for message in app.flashes('success')%}
-			<div class="alert alert-success" role="alert">
-				{{ message }}
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+<section id="contact">
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+			<div class="sec-title text-center">
+				<h2>Contact</h2>
+				<p class="text-center">Vous pouvez me contacter en remplissant ce formulaire ou directement sur mon adresse
+					mail, je vous répondrai dans les meilleurs délais.<br />
+					<a href="mailto:virginia.atenza@gmail.com">virginia.atenza@gmail.com</a></p>
+				<div class="devider" style="font-size: 16px;">
+					👋
+				</div>
 			</div>
-		{% endfor %}
-
-		{% if not form.vars.valid %}
-			<script>
-				$(document).ready(function () {
-$('html,body').animate({
-scrollTop: $('#contactForm').offset().top
-}, 5000);
-});
-			</script>
-			<div class="alert alert-danger alert-dismissible fade show" role="alert">
-				Il y a une erreur dans votre formulaire
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-		{% endif %}
-		<div id="contactForm">
-			{{ form_start(form, { 'attr': {'novalidate': 'novalidate'}})}}
-			<div class="row">
-				<div class="col">{{form_row(form.firstname)}}</div>
-				<div class="col">{{form_row(form.lastname)}}</div>
-			</div>
-			<div class="row">
-				<div class="col">{{form_row(form.phone)}}</div>
-				<div class="col">{{form_row(form.email)}}</div>
-			</div>
-			{{form_rest(form)}}
-			<div class="form-group">
-				<button class="btn btn-primary">Envoyer</button>
-			</div>
-			{{ form_end(form)}}
-
 		</div>
-	</section>
+
+		<div class="box-shadow-full">
+			<div class="row">
+				<div class="col-sm-12">
+					{% for message in app.flashes('success')%}
+					<div class="alert alert-success" role="alert">
+						{{ message }}
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					{% endfor %}
+
+					{% if not form.vars.valid %}
+					<div class="alert alert-danger alert-dismissible fade show" role="alert">
+						Erreurs dans le formulaire. Veuillez renseigner tous les champs.
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					{% endif %}
+					<div id="contactForm">
+						{{ form_start(form, { 'attr': {'novalidate': 'novalidate'}})}}
+						<fieldset>
+							<div class="row">
+								<div class="col">{{form_row(form.firstname)}}</div>
+								<div class="col">{{form_row(form.lastname)}}</div>
+							</div>
+							<div class="row">
+								<div class="col">{{form_row(form.phone)}}</div>
+								<div class="col">{{form_row(form.email)}}</div>
+							</div>
+							{{form_rest(form)}}
+							<div class="form-group d-flex justify-content-center mt-4">
+								<button class="btn btn-primary btn-lg my-btn">Envoyer</button>
+							</div>
+						</fieldset>
+						{{ form_end(form)}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 {% endblock %}
 
