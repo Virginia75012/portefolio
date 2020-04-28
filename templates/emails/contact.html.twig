@@ -8,21 +8,19 @@
 
 <body>
 	<div class="header">
-		<h2 style="color:#253f58; font-size: 25px;">Nouveau message depuis Portfolio !</h2>
+		<h2 style="color:#110133; font-size: 22px;">Nouveau message depuis Portfolio !</h2>
 		<p style="font-size: 15px;">Tu viens de recevoir un nouveau message de : <br />
 			<strong>{{ contact.firstname}} {{ contact.lastname}}</strong></p>
 	</div>
 
-	<div class="content-message">
-		<p style="font-size: 15px;">Prénom : <br/>
-			{{ contact.firstname}}</p>
-		<p style="font-size: 15px;">Nom : <br/>
-			{{ contact.lastname}}</p>
-		<p style="font-size: 15px;">Téléphone : <br/>
+	<div class="content-message" style="border: 1px solid black;">
+		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Identité :</strong> <br/>
+			{{ contact.firstname}} {{ contact.lastname}}</p>
+		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Téléphone : </strong><br/>
 			{{ contact.phone}}</p>
-		<p style="font-size: 15px;">Email : <br/>
+		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Email : </strong><br/>
 			{{ contact.email}}</p>
-		<p style="font-size: 15px;">Message : <br/>
+		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Message : </strong><br/>
 			{{ contact.message}}</p>
 	</div>
 </body>
