@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Virginia Atenza
-{% endblock %}
+{% block title %} Virginia Atenza {% endblock %}
 
 {% block body %}
 
@@ -11,64 +10,7 @@
 
 {{ include('page/_work.html.twig') }}
 
-<section id="contact">
-	<div class="container">
-		<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-			<div class="sec-title text-center">
-				<h2>Contact</h2>
-				<p class="text-center">Vous pouvez me contacter en remplissant ce formulaire ou directement sur mon adresse
-					mail, je vous répondrai dans les meilleurs délais.<br />
-					<a href="mailto:virginia.atenza@gmail.com">virginia.atenza@gmail.com</a></p>
-				<div class="devider" style="font-size: 16px;">
-					👋
-				</div>
-			</div>
-		</div>
+{{ include('page/_contact.html.twig') }}
 
-		<div class="box-shadow-full">
-			<div class="row">
-				<div class="col-sm-12">
-					{% for message in app.flashes('success')%}
-					<div class="alert alert-success" role="alert">
-						{{ message }}
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					{% endfor %}
-
-					{% if not form.vars.valid %}
-					<div class="alert alert-danger alert-dismissible fade show" role="alert">
-						Erreurs dans le formulaire. Veuillez renseigner tous les champs.
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					{% endif %}
-					<div id="contactForm">
-						{{ form_start(form, { 'attr': {'novalidate': 'novalidate'}})}}
-						<fieldset>
-							<div class="row">
-								<div class="col">{{form_row(form.firstname)}}</div>
-								<div class="col">{{form_row(form.lastname)}}</div>
-							</div>
-							<div class="row">
-								<div class="col">{{form_row(form.phone)}}</div>
-								<div class="col">{{form_row(form.email)}}</div>
-							</div>
-							{{form_rest(form)}}
-							<div class="form-group d-flex justify-content-center mt-4">
-								<button class="btn btn-primary btn-lg my-btn">Envoyer</button>
-							</div>
-						</fieldset>
-						{{ form_end(form)}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 {% endblock %}
-
-{# https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=693&q=80 #}
