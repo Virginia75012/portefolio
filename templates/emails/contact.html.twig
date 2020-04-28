@@ -1,23 +1,30 @@
-<mjml>
-	<mj-body>
-		<mj-section>
-			<mj-column>
+<!DOCTYPE html>
+<html>
 
-				<mj-image width="100px" src="/assets/img/logo-small.png"></mj-image>
+<head>
+	<meta charset="UTF-8">
+	<title>Nouveau message</title>
+</head>
 
-				<mj-divider border-color="#F45E43"></mj-divider>
+<body>
+	<div class="header">
+		<h2 style="color:#253f58; font-size: 25px;">Nouveau message depuis Portfolio !</h2>
+		<p style="font-size: 15px;">Tu viens de recevoir un nouveau message de : <br />
+			<strong>{{ contact.firstname}} {{ contact.lastname}}</strong></p>
+	</div>
 
-				<mj-text font-size="20px" color="#F45E43" font-family="helvetica">Hello World</mj-text>
-				{{ contact.firstname}}
-				<br/>
-				{{ contact.lastname}}
-				<br/>
-				{{ contact.phone}}
-				<br/>
-				{{ contact.email}}
-				<br/>
-				{{ contact.message}}
-			</mj-column>
-		</mj-section>
-	</mj-body>
-</mjml>
+	<div class="content-message">
+		<p style="font-size: 15px;">Prénom : <br/>
+			{{ contact.firstname}}</p>
+		<p style="font-size: 15px;">Nom : <br/>
+			{{ contact.lastname}}</p>
+		<p style="font-size: 15px;">Téléphone : <br/>
+			{{ contact.phone}}</p>
+		<p style="font-size: 15px;">Email : <br/>
+			{{ contact.email}}</p>
+		<p style="font-size: 15px;">Message : <br/>
+			{{ contact.message}}</p>
+	</div>
+</body>
+
+</html>

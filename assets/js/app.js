@@ -61,11 +61,6 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 		}, 1000);
 	});
 
-	// /*--/ Star Counter /--*/
-	// $('.counter').counterUp({
-	// 	delay: 15,
-	// 	time: 2000
-	// });
 
 	/*--/ Star Scrolling nav /--*/
 	$('a.js-scroll').click(function () {
@@ -79,12 +74,6 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 	$('.js-scroll').on("click", function () {
 		$('.navbar-collapse').collapse('hide');
 	});
-
-	// Activate scrollspy to add active class to navbar items on scroll
-	// $('body').scrollspy({
-	// 	target: '#mainNav',
-	// 	offset: navHeight
-	// });
 	/*--/ End Scrolling nav /--*/
 
 	/*--/ Navbar Menu Reduce /--*/
@@ -117,20 +106,6 @@ console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 			backSpeed: 30
 		});
 	}
-
-
-	/*--/ Testimonials owl /--*/
-	// $('#testimonial-mf').owlCarousel({
-	// 	margin: 20,
-	// 	autoplay: true,
-	// 	autoplayTimeout: 4000,
-	// 	autoplayHoverPause: true,
-	// 	responsive: {
-	// 		0: {
-	// 			items: 1,
-	// 		}
-	// 	}
-	// });
 
 	/*--/ ScrollMagix TweenMax /--*/
 	var controller = new ScrollMagic.Controller();

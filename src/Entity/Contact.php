@@ -10,14 +10,14 @@ class Contact
 	/**
 	 * @var string|null
 	 *? @Assert\NotBlank(message="Merci de renseigner votre prénom")
-	 *? @Assert\Length(min=2, max=100)
+	 *? @Assert\Length(min=2, max=100, minMessage="Le prénom doit au moins contenir 2 caractères", maxMessage="Le prénom doit moins 			 contenir 100 caractères")
 	 */
 	private $firstname;
 
 	/**
 	 * @var string|null
 	 *? @Assert\NotBlank(message="Merci de renseigner votre nom")
-	 *? @Assert\Length(min=2, max=100)
+	 *? @Assert\Length(min=2, max=100, minMessage="Le nom doit au moins contenir 2 caractères", maxMessage="Le nom doit moins contenir 100 caractères")
 	 */
 	private $lastname;
 

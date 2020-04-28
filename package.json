@@ -1,5 +1,5 @@
 {
-	"name": "portefolio",
+	"name": "portfolio",
 	"description": "devfolio virginia atenza",
 	"version": "1.0.0",
 	"engines": {
@@ -8,6 +8,7 @@
 	"devDependencies": {
 		"copy-webpack-plugin": "^5.1.1",
 		"core-js": "^3.0.0",
+		"css-loader": "^3.5.3",
 		"jquery": "^3.4.1",
 		"node-sass": "^4.13.1",
 		"regenerator-runtime": "^0.13.2",

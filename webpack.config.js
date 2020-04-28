@@ -55,6 +55,11 @@ Encore
 		config.corejs = 3;
 	})
 
+	// Fix CSS-loader v3 error option that is automatically injected by webpack
+	.configureCssLoader((options) => {
+		delete options.localIdentName;
+	})
+
 	// enables Sass/SCSS support
 	.enableSassLoader();
 
