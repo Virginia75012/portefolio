@@ -6,23 +6,40 @@
 	<title>Nouveau message</title>
 </head>
 
-<body>
+<body style="padding: 30px;
+  background-color: #fcfcfc;">
+
 	<div class="header">
-		<h2 style="color:#110133; font-size: 22px;">Nouveau message depuis Portfolio !</h2>
-		<p style="font-size: 15px;">Tu viens de recevoir un nouveau message de : <br />
+		<h2 style="color:#110133; font-size: 26px;">Nouveau message depuis Portfolio !</h2>
+		<p style="font-size: 20px;">Tu viens de recevoir un nouveau message de : <br />
 			<strong>{{ contact.firstname}} {{ contact.lastname}}</strong></p>
 	</div>
+	<hr />
 
-	<div class="content-message" style="border: 1px solid black;">
-		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Identité :</strong> <br/>
-			{{ contact.firstname}} {{ contact.lastname}}</p>
-		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Téléphone : </strong><br/>
-			{{ contact.phone}}</p>
-		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Email : </strong><br/>
-			{{ contact.email}}</p>
-		<p style="color: #110133; font-size: 18px; text-transform: uppercase;"><strong>Message : </strong><br/>
-			{{ contact.message}}</p>
+	<div class="content-message" style="border: 2px solid #110133; margin: 0 auto;
+  background-color: rgb(109, 182, 173, 0.7);
+  border-radius: 5px;">
+		<ul style="text-align: center; list-style: none; color: #110133;">
+			<li style="color: #110133; font-size: 18px; text-transform: uppercase; text-decoration: underline;">
+				<strong>Identité :</strong>
+			</li>
+			<p style="font-size: 16px;">{{ contact.firstname}} {{ contact.lastname}}</p>
+			
+			<li style="color: #110133; font-size: 18px; text-transform: uppercase; text-decoration: underline;">
+				<strong>Téléphone :</strong>
+			</li>
+			<p style="font-size: 16px;">{{ contact.phone}}</p>
+			
+			<li style="color: #110133; font-size: 18px; text-transform: uppercase; text-decoration: underline;">
+				<strong>Email :</strong>
+			</li>
+			<p style="font-size: 16px;">{{ contact.email}}</p>
+
+			<li style="color: #110133; font-size: 18px; text-transform: uppercase; text-decoration: underline;">
+				<strong>Message :</strong></li>
+			<p style="font-size: 16px; ">{{ contact.message}}</p>
+		</ul>
 	</div>
-</body>
 
+</body>
 </html>
