@@ -114,10 +114,12 @@
 .icon-link {
 	background: #00909E;
 	padding: 12px 10px;
-	width: 50px !important;
+	width: 62px !important;
+	height: 70px;
 }
 
-.overlay .fa-link {
+.overlay .fa-link,
+.fa-play {
 	font-size: 20px;
 	margin: 0 5px;
 	color: #fff;
