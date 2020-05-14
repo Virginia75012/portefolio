@@ -1,0 +1,25 @@
+leogout_seo:
+    # By default, the SEO generators services are not loaded if you don't configure them. The following default configuration
+    # loads the services but they won't render anything.
+    # See https://github.com/leogout/SeoBundle#configuration-reference to configure them.
+    # See https://github.com/leogout/SeoBundle#setting-values-dynamically to use them directly in your controller.
+    general:
+        title: Virginia Atenza DevFolio
+        description: Default description
+        image: 'assets/images/social-banner.png'
+    basic:
+        title: Virginia Atenza DevFolio
+        description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
+        keywords: default, keywords
+    og:
+        title: Virginia Atenza DevFolio
+        description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
+        image: 'assets/images/social-banner.png'
+        type: website
+        url: https://portefolio-symfony.herokuapp.com/
+    twitter:
+        title: Virginia Atenza DevFolio
+        description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
+        image: 'assets/images/social-banner.png'
+        card: summary 
+        site: '@leogoutt' 
