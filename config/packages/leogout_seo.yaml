@@ -14,7 +14,7 @@ leogout_seo:
     og:
         title: Virginia Atenza DevFolio
         description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
-        image: https://portefolio-symfony.herokuapp.com/build/social-banner.8547b7c9.png
+        # image: https://portefolio-symfony.herokuapp.com/build/social-banner.8547b7c9.png
         type: website
         url: https://portefolio-symfony.herokuapp.com/
     twitter:
