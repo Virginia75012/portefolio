@@ -6,7 +6,7 @@ leogout_seo:
     general:
         title: Virginia Atenza - DevFolio
         description: Default description
-        image: https://portefolio-symfony.herokuapp.com/build/social-banner.2c3c1b67.png
+        image: https://devfolio-virginiaatenza.herokuapp.com/build/social-banner.2c3c1b67.png
     basic:
         title: Virginia Atenza - DevFolio
         description: Mon portfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
@@ -14,12 +14,12 @@ leogout_seo:
     og:
         title: Virginia Atenza - DevFolio
         description: Mon portfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
-        image: https://portefolio-symfony.herokuapp.com/build/social-banner.2c3c1b67.png
+        image: https://devfolio-virginiaatenza.herokuapp.com/build/social-banner.2c3c1b67.png
         type: website
         url: https://devfolio-virginiaatenza.herokuapp.com/
     twitter:
         title: Virginia Atenza - DevFolio
         description: Mon portfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
-        image: https://portefolio-symfony.herokuapp.com/build/social-banner.2c3c1b67.png
+        image: https://devfolio-virginiaatenza.herokuapp.com/build/social-banner.2c3c1b67.png
         card: summary 
         site: '@leogoutt' 
