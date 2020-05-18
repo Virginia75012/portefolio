@@ -4,21 +4,21 @@ leogout_seo:
     # See https://github.com/leogout/SeoBundle#configuration-reference to configure them.
     # See https://github.com/leogout/SeoBundle#setting-values-dynamically to use them directly in your controller.
     general:
-        title: Virginia Atenza DevFolio
+        title: Virginia Atenza - DevFolio
         description: Default description
         image: https://portefolio-symfony.herokuapp.com/build/social-banner.2c3c1b67.png
     basic:
-        title: Virginia Atenza DevFolio
+        title: Virginia Atenza - DevFolio
         description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
         keywords: default, keywords
     og:
-        title: Virginia Atenza DevFolio
+        title: Virginia Atenza - DevFolio
         description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
         image: https://portefolio-symfony.herokuapp.com/build/social-banner.2c3c1b67.png
         type: website
         url: https://portefolio-symfony.herokuapp.com/
     twitter:
-        title: Virginia Atenza DevFolio
+        title: Virginia Atenza - DevFolio
         description: Mon protfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
         image: https://portefolio-symfony.herokuapp.com/build/social-banner.2c3c1b67.png
         card: summary 
