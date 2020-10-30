@@ -14,7 +14,7 @@ leogout_seo:
     og:
         title: Virginia Atenza - DevFolio
         description: Mon portfolio presentant mon parcours professionnel ainsi que mes realisations effectuees en tant que developpeuse web
-        # image: https://devfolio-virginiaatenza.herokuapp.com/build/social-banner.517a832a.png
+        image: https://devfolio-virginiaatenza.herokuapp.com/build/social-banner.517a832a.png
         type: website
         url: https://devfolio-virginiaatenza.herokuapp.com/
     twitter:
