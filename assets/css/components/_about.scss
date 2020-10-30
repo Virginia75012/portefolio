@@ -4,7 +4,7 @@
 
 .about-mf .box-shadow-full {
 	padding-top: 4rem;
-	padding-bottom: 4rem;
+	padding-bottom: 6rem;
 }
 
 .about-mf .about-img {
@@ -40,7 +40,7 @@
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
-	margin-top: 68px;
+	margin-top: 26px;
 	/*   max-width: 35em; */
 }
 
@@ -256,6 +256,105 @@
 	z-index: 1;
 }
 
+#skills-diagram .skill-14 {
+	vertical-align: bottom;
+
+	width: 6em;
+	height: 6em;
+	line-height: 6em;
+	background-color: #110133;
+	border-color: #110133;
+
+	top: 9.5em;
+	left: 11em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-15 {
+	vertical-align: bottom;
+
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+	background-color: rgb(109, 182, 173);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 4em;
+	left: 6.5em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-16 {
+	vertical-align: bottom;
+
+	width: 7em;
+	height: 7em;
+	line-height: 7em;
+	background-color: #110133;
+	border-color: #110133;
+
+	top: 5.5em;
+	right: 5.7em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-17 {
+	vertical-align: bottom;
+
+	width: 3.5em;
+	height: 3.5em;
+	line-height: 3.5em;
+	background-color: rgba(109, 182, 173, 1);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 9em;
+	right: 11em;
+	z-index: 2;
+}
+
+#skills-diagram .skill-18 {
+	vertical-align: bottom;
+
+	width: 6em;
+	height: 6em;
+	line-height: 6em;
+	background-color: #110133;
+	border-color: #110133;
+
+	top: 2.5em;
+	right: 4em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-19 {
+	vertical-align: bottom;
+
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+	background-color: rgba(109, 182, 173, 1);
+	border-color: rgba(109, 182, 173, 1);
+
+	top: 5em;
+	right: 7em;
+	z-index: 1;
+}
+
+#skills-diagram .skill-20 {
+	vertical-align: bottom;
+
+	width: 4em;
+	height: 4em;
+	line-height: 4em;
+	background-color: rgba(109, 182, 173, 1);
+	border-color: rgba(109, 182, 173, 1);
+
+	bottom: 2.5em;
+	right: 14em;
+	z-index: 1;
+}
+
+
 /*======================================
 //--//-->   MEDIA QUERIES
 ======================================*/
@@ -295,6 +394,28 @@
 	#skills-diagram .skill-6 {
 		left: 19.5em;
 		top: -0.95em;
+	}
+
+	#skills-diagram .skill-14 {
+		top: 10.5em;
+	}
+
+  #skills-diagram .skill-15 {
+		top: 5em;
+    left: 7em;
+	}
+
+	#skills-diagram .skill-16 {
+		right: 4.7em;
+	}
+
+	#skills-diagram .skill-18 {
+		right: 3em;
+	}
+
+  #skills-diagram .skill-19 {
+		top: 6em;
+    right: 6em;
 	}
 }
 
