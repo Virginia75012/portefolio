@@ -29,7 +29,7 @@
 		"@symfony/webpack-encore": "^0.28.2",
 		"animate.css": "^3.7.2",
 		"bootstrap": "^4.4.1",
-		"gsap": "^3.2.6",
+		"gsap": "^3.6.0",
 		"maildev": "^1.1.0",
 		"scrollmagic": "^2.0.7",
 		"typed": "^0.3.3",
